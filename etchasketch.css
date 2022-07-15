@@ -8,10 +8,8 @@
     grid-gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    margin-left:200px;
-    margin-right: 200px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 5rem;
+    max-height: fit-content;
   }
   
   .grid-item {
@@ -32,4 +30,8 @@
     align-items: center;
     justify-content: center;
 
+  }
+
+  .filled {
+    background-color: black;
   }

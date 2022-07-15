@@ -21,6 +21,11 @@ function clearRows() {
 function refreshRows(){
     clearRows();
     makeRows(16, 16);
+    document.querySelectorAll('.grid-item').forEach(item => {
+      item.addEventListener('click', event => {
+        item.classList.add('filled');
+      })
+    })
 };
 
 document.querySelectorAll('.grid-item').forEach(item => {

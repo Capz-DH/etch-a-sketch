@@ -2,14 +2,21 @@
     --grid-cols: 1;
     --grid-rows: 1;
   }
-  
+  .grid-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
   #container {
     display: grid;
     grid-gap: 0;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    margin: 5rem;
-    max-height: fit-content;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   
   .grid-item {

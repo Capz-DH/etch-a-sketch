@@ -22,15 +22,18 @@ function refreshRows(){
     clearRows();
     makeRows(16, 16);
     document.querySelectorAll('.grid-item').forEach(item => {
-      item.addEventListener('click', event => {
+      item.addEventListener('mouseover', event => {
         item.classList.add('filled');
       })
     })
 };
 
 document.querySelectorAll('.grid-item').forEach(item => {
-  item.addEventListener('click', event => {
-    item.classList.add('filled');
+  item.addEventListener('mouseover', event => {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    if (item.style.backgroundColor == '') {
+    item.style.backgroundColor = '#' + randomColor
+    } else return;
   })
 })
 

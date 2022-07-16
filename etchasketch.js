@@ -27,14 +27,16 @@ function refreshRows(){
         if (document.getElementById('black').checked) {
           item.classList.add('filled');
         } else if (document.getElementById('red').checked) {
-          item.style.backgroundColor = 'red';
+          item.style.backgroundColor = '#C03221';
         } else if (document.getElementById('green').checked) {
-          item.style.backgroundColor = 'green';
+          item.style.backgroundColor = '#69995D';
         } else if (document.getElementById('blue').checked) {
-          item.style.backgroundColor = 'blue';
+          item.style.backgroundColor = '#5AA9E6';
         } else if (document.getElementById('rainbow').checked) {
           item.style.backgroundColor = '#' + randomColor;
-      }})
+        } else if (document.getElementById('eraser').checked) {
+        item.style.backgroundColor = '';
+    }})
     })
 };
 
@@ -44,11 +46,11 @@ document.querySelectorAll('.grid-item').forEach(item => {
     if (document.getElementById('black').checked) {
       item.classList.add('filled');
     } else if (document.getElementById('red').checked) {
-      item.style.backgroundColor = 'red';
+      item.style.backgroundColor = '#C03221';
     } else if (document.getElementById('green').checked) {
-      item.style.backgroundColor = 'green';
+      item.style.backgroundColor = '#69995D';
     } else if (document.getElementById('blue').checked) {
-      item.style.backgroundColor = 'blue';
+      item.style.backgroundColor = '#5AA9E6';
     } else if (document.getElementById('rainbow').checked) {
       item.style.backgroundColor = '#' + randomColor;
     } else if (document.getElementById('eraser').checked) {

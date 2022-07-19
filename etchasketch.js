@@ -25,7 +25,7 @@ function refreshRows(){
       item.addEventListener('mouseover', event => {
         let randomColor = Math.floor(Math.random()*16777215).toString(16);
         if (document.getElementById('black').checked) {
-          item.classList.add('filled');
+          item.style.backgroundColor = '#253237';
         } else if (document.getElementById('red').checked) {
           item.style.backgroundColor = '#C03221';
         } else if (document.getElementById('green').checked) {
@@ -44,7 +44,7 @@ document.querySelectorAll('.grid-item').forEach(item => {
   item.addEventListener('mouseover', event => {
     let randomColor = Math.floor(Math.random()*16777215).toString(16);
     if (document.getElementById('black').checked) {
-      item.classList.add('filled');
+      item.style.backgroundColor = '#253237';
     } else if (document.getElementById('red').checked) {
       item.style.backgroundColor = '#C03221';
     } else if (document.getElementById('green').checked) {
